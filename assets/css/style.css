@@ -1,0 +1,106 @@
+body {
+	padding-top: 70px;
+	padding-bottom: 200px;
+}
+
+/* Nav */
+.navbar-brand, .nav-link {
+	cursor: pointer;
+}
+
+.active .nav-link {
+	cursor: default;
+}
+
+.page {
+	overflow: hidden;
+}
+
+/* Modal for contact */
+#modal_email {
+	height: 111px;
+}
+
+#modal_email {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#modal_email.ie8 {
+    /* you need to specify width and height */
+    width: 500px; 
+    height: 300px;
+    margin-left: -150px; /* 300/2=150 */
+    margin-top: -250px; /* 500/2=250 */
+}
+
+/* Picture carousel */
+#carousel, #carousel div div img {
+	height: 600px;
+}
+
+/* Footer */
+footer {
+	min-width: 100%;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin-bottom: 0px;
+
+	color: white;
+	background-color: #212529;
+}
+
+#button-scroll-to-top {
+	color: white;
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	outline:none;
+}
+
+.social-networks-nav {
+	display: flex;
+	flex-direction: row;
+
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	list-style: none;
+}
+
+.social-networks-nav-item {
+	flex: 1;
+	font-size: 24px;
+}
+
+.social-networks-nav-link {
+	color: white;
+}
+
+.social-networks-nav-link:hover {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.social-networks-nav-link.youtube:hover {
+	color: #e32c28;
+}
+
+.social-networks-nav-link.twitter:hover {
+	color: #55acee;
+}
+
+.social-networks-nav-link.facebook:hover {
+	color: #43609c;
+}
+
+.social-networks-nav-link.instagram:hover {
+	color: #a37154;
+}

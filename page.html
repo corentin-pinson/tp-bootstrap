@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Our Museum</title>
+		<link rel='shortcut icon' href='../../icon.png'>
+
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- jQuery -->
+		<script src="./assets/js/jquery.js"></script>
+
+		<!-- jQuery Modal -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+		<!-- Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+		<!-- Bootstrap -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+		<!-- Font Awesome -->
+		<link type='text/css' rel='stylesheet' href='./assets/css/fontawesome.css'>
+
+		<!-- TP JavaScript -->
+		<script src="./assets/js/script.js"></script>
+		<link rel="stylesheet" href="./assets/css/style.css">
+	</head>
+	<body>
+		<main role="main">
+			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+				<a class="navbar-brand" onclick="Menu.showTab(0);">Our Museum</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a id="home" class="nav-link" tab-index='0'>Home</a>
+						</li>
+						<li class="nav-item">
+							<a id="presentation" class="nav-link" tab-index='1'>Presentation</a>
+						</li>
+						<li class="nav-item">
+							<a id="pictures" class="nav-link" tab-index='2'>Pictures</a>
+						</li>
+						<li class="nav-item">
+							<a id="fare" class="nav-link" tab-index='3'>Fare</a>
+						</li>
+						<li class="nav-item">
+							<a id="contact" class="nav-link" tab-index='4'>Contact</a>
+						</li>
+					</ul>
+					<form class="form-inline mt-2 mt-md-0" onsubmit="openPage()">
+						<input id="form_search" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+						<input class="btn btn-outline-success my-2 my-sm-0" value="Search" type="submit">
+					</form>
+				</div>
+			</nav>
+			<div class="container marketing">
+				<!-- HOME -->
+				<div class='page' page-index='0'>
+					<h1>HOME</h1>
+					<div id="carousel" class="carousel slide" data-ride="carousel">
+					 	<ol class="carousel-indicators"></ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100" src="https://cdn.pixabay.com/photo/2020/05/26/13/22/puffins-5223057_960_720.jpg" alt="First slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="https://cdn.pixabay.com/photo/2020/06/08/19/31/jellyfish-5275858_960_720.jpg" alt="Second slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="https://cdn.pixabay.com/photo/2020/06/21/16/57/tomatoes-5325850_960_720.jpg" alt="Third slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="https://cdn.pixabay.com/photo/2020/06/21/12/37/deer-5324645_960_720.jpg" alt="Third slide">
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+
+				<!-- PRESENTATION -->
+				<div class='page' page-index='1' style="display: none;">
+					<div class="jumbotron p-4 p-md-5 text-white rounded bg-secondary">
+						<div class="col-md-10 px-0">
+							<h1 class="display-4 font-italic">Discover our museum</h1>
+							<p class="lead my-3">Our website is opened 24 hours per day, 7 days per week and 52 weeks by year.</p>
+						</div>
+					</div>
+					<p>
+						Mais, vous savez, moi je ne crois pas
+						qu'il y ait de bonne ou de mauvaise situation.
+						Moi, si je devais résumer ma vie aujourd'hui avec vous,
+						je dirais que c'est d'abord des rencontres,
+						Des gens qui m'ont tendu la main,
+						peut-être à un moment où je ne pouvais pas, où j'étais seul chez moi.
+						Et c'est assez curieux de se dire que les hasards,
+						les rencontres forgent une destinée...
+						Parce que quand on a le goût de la chose,
+						quand on a le goût de la chose bien faite,
+						Le beau geste, parfois on ne trouve pas l'interlocuteur en face,
+						je dirais, le miroir qui vous aide à avancer.
+						Alors ce n'est pas mon cas, comme je le disais là,
+						puisque moi au contraire, j'ai pu ;
+						Et je dis merci à la vie, je lui dis merci,
+						je chante la vie, je danse la vie... Je ne suis qu'amour!
+						Et finalement, quand beaucoup de gens aujourd'hui me disent :
+						"Mais comment fais-tu pour avoir cette humanité ?",
+						Eh bien je leur réponds très simplement,
+						je leur dis que c'est ce goût de l'amour,
+						Ce goût donc qui m'a poussé aujourd'hui
+						à entreprendre une construction mécanique,
+						Mais demain, qui sait, peut-être simplement
+						à me mettre au service de la communauté,
+						à faire le don, le don de soi...
+					</p>
+					<p>
+						Mais, vous savez, moi je ne crois pas
+						qu'il y ait de bonne ou de mauvaise situation.
+						Moi, si je devais résumer ma vie aujourd'hui avec vous,
+						je dirais que c'est d'abord des rencontres,
+						Des gens qui m'ont tendu la main,
+						peut-être à un moment où je ne pouvais pas, où j'étais seul chez moi.
+						Et c'est assez curieux de se dire que les hasards,
+						les rencontres forgent une destinée...
+						Parce que quand on a le goût de la chose,
+						quand on a le goût de la chose bien faite,
+						Le beau geste, parfois on ne trouve pas l'interlocuteur en face,
+						je dirais, le miroir qui vous aide à avancer.
+						Alors ce n'est pas mon cas, comme je le disais là,
+						puisque moi au contraire, j'ai pu ;
+						Et je dis merci à la vie, je lui dis merci,
+						je chante la vie, je danse la vie... Je ne suis qu'amour!
+						Et finalement, quand beaucoup de gens aujourd'hui me disent :
+						"Mais comment fais-tu pour avoir cette humanité ?",
+						Eh bien je leur réponds très simplement,
+						je leur dis que c'est ce goût de l'amour,
+						Ce goût donc qui m'a poussé aujourd'hui
+						à entreprendre une construction mécanique,
+						Mais demain, qui sait, peut-être simplement
+						à me mettre au service de la communauté,
+						à faire le don, le don de soi...
+					</p>
+					<p>
+						Mais, vous savez, moi je ne crois pas
+						qu'il y ait de bonne ou de mauvaise situation.
+						Moi, si je devais résumer ma vie aujourd'hui avec vous,
+						je dirais que c'est d'abord des rencontres,
+						Des gens qui m'ont tendu la main,
+						peut-être à un moment où je ne pouvais pas, où j'étais seul chez moi.
+						Et c'est assez curieux de se dire que les hasards,
+						les rencontres forgent une destinée...
+						Parce que quand on a le goût de la chose,
+						quand on a le goût de la chose bien faite,
+						Le beau geste, parfois on ne trouve pas l'interlocuteur en face,
+						je dirais, le miroir qui vous aide à avancer.
+						Alors ce n'est pas mon cas, comme je le disais là,
+						puisque moi au contraire, j'ai pu ;
+						Et je dis merci à la vie, je lui dis merci,
+						je chante la vie, je danse la vie... Je ne suis qu'amour!
+						Et finalement, quand beaucoup de gens aujourd'hui me disent :
+						"Mais comment fais-tu pour avoir cette humanité ?",
+						Eh bien je leur réponds très simplement,
+						je leur dis que c'est ce goût de l'amour,
+						Ce goût donc qui m'a poussé aujourd'hui
+						à entreprendre une construction mécanique,
+						Mais demain, qui sait, peut-être simplement
+						à me mettre au service de la communauté,
+						à faire le don, le don de soi...
+					</p>
+				</div>
+
+				<div class='page' page-index='2' style="display: none;">
+					<h1>PICTURES</h1>
+					<div id="pictures-grid" class="row text-center text-lg-left">
+						<div class="col-lg-3 col-md-4 col-6">
+							<p class="picture-title"></p>
+							<a href="#" class="d-block mb-4 h-100" target="_blank">
+								<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-4 col-6">
+							<p class="picture-title"></p>
+							<a href="#" class="d-block mb-4 h-100" target="_blank">
+								<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aob0ukAYfuI/400x300" alt="">
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-4 col-6">
+							<p class="picture-title"></p>
+							<a href="#" class="d-block mb-4 h-100" target="_blank">
+								<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt="">
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-4 col-6">
+							<p class="picture-title"></p>
+							<a href="#" class="d-block mb-4 h-100" target="_blank">
+								<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt="">
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-4 col-6">
+							<p class="picture-title"></p>
+							<a href="#" class="d-block mb-4 h-100" target="_blank">
+								<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-4 col-6">
+							<p class="picture-title"></p>
+							<a href="#" class="d-block mb-4 h-100" target="_blank">
+								<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/AvhMzHwiE_0/400x300" alt="">
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-4 col-6">
+							<p class="picture-title"></p>
+							<a href="#" class="d-block mb-4 h-100" target="_blank">
+								<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/2gYsZUmockw/400x300" alt="">
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-4 col-6">
+							<p class="picture-title"></p>
+							<a href="#" class="d-block mb-4 h-100" target="_blank">
+								<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EMSDtjVHdQ8/400x300" alt="">
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-4 col-6">
+							<p class="picture-title"></p>
+							<a href="#" class="d-block mb-4 h-100" target="_blank">
+								<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/8mUEy0ABdNE/400x300" alt="">
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-4 col-6">
+							<p class="picture-title"></p>
+							<a href="#" class="d-block mb-4 h-100" target="_blank">
+								<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/G9Rfc1qccH4/400x300" alt="">
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-4 col-6">
+							<p class="picture-title"></p>
+							<a href="#" class="d-block mb-4 h-100" target="_blank">
+								<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aJeH0KcFkuc/400x300" alt="">
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-4 col-6">
+							<p class="picture-title"></p>
+							<a href="#" class="d-block mb-4 h-100" target="_blank">
+								<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/p2TQ-3Bh3Oo/400x300" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- FARE -->
+				<div class='page' page-index='3' style="display: none;">
+					<h1>FARE</h1>
+					<table id="table_fares" class="table table-hover">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>File</th>
+								<th>Printed</th>
+								<th>Framed</th>
+								<th>Painted by our artist on your wall</th>
+								<th>Price</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Yes</td>
+								<td>No</td>
+								<td>No</td>
+								<td>No</td>
+								<td>$5</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>No</td>
+								<td>No</td>
+								<td>$20</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>No</td>
+								<td>$60</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>$1500</td>
+							</tr>
+						</tbody>
+					</table>
+					<button class="btn btn-success my-2 my-sm-0" onclick="Menu.showTab(4);">Buy</button>
+				</div>
+
+				<!-- CONTACT -->
+				<div class='page' page-index='4' style="display: none;">
+					<h1>CONTACT</h1>
+
+					<form id="contact-form">
+						<div class="controls">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="form_name">Firstname *</label>
+										<input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="form_lastname">Lastname *</label>
+										<input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label for="form_email">Email *</label>
+										<input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="form_picture">Picture *</label>
+										<select id="form_picture" name="picture" class="form-control" required="required" data-error="Please specify your picture."></select>
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="form_fare">Fare *</label>
+										<select id="form_fare" name="fare" class="form-control" required="required" data-error="Please specify your fare."></select>
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label for="form_message">Message *</label>
+										<textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<input class="btn btn-success btn-send" value="Send message" type="submit">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+
+					<div id="modal_email" class="modal">
+						<p id="modal_email_content"><p/>
+						<button id="close_modal_email">Close</button>
+					</div>
+			</div>
+
+			<footer class="container">
+				<p class="float-right"><a id="button-scroll-to-top">Back to top</a></p></br>
+				<div class="social-networks">
+					<ul class="social-networks-nav">
+						<li class="social-networks-nav-item">
+							<a id="youtube" class="social-networks-nav-link fab fa-youtube youtube" target="_blank"></a>
+						</li>
+						<li class="social-networks-nav-item">
+							<a id="twitter" class="social-networks-nav-link fab fa-twitter twitter" target="_blank"></a>
+						</li>
+						<li class="social-networks-nav-item">
+							<a id="facebook" class="social-networks-nav-link fab fa-facebook-f facebook" target="_blank"></a>
+						</li>
+						<li class="social-networks-nav-item">
+							<a id="instagram" class="social-networks-nav-link fab fa-instagram instagram" target="_blank"></a>
+						</li>
+					</ul>
+				</div>
+				<p>© 2020 FNE-FORMATION, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+			</footer>
+		</main>
+	</body>
+</html>
